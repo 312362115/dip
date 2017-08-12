@@ -8,7 +8,6 @@ cd  "$(dirname "$0")"
 dig +short myip.opendns.com @resolver1.opendns.com > ip.txt
 
 
-
 if [ -z "$(git st --porcelain)"]; then
 	exit
 fi
@@ -16,8 +15,7 @@ fi
 
 time=`date "+%F %T"`
 
-
 git add .
-git ci -m "update at ${time}" 
+git commit -m "update at ${time}" 
 
 git push origin master
