@@ -4,7 +4,7 @@
 cd  "$(dirname "$0")"
 
 
-# curl cip.cc | awk -F : 'NR==1{print $2}' > ip.txt
+# curl ip.cip.cc > ip.txt
 dig +short myip.opendns.com @resolver1.opendns.com > ip.txt
 
 
