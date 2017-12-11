@@ -11,7 +11,7 @@ fi
 dig +short myip.opendns.com @resolver1.opendns.com > ip.txt
 
 
-if [ -z "$(git st --porcelain)"]; then
+if [ -z "$(git status --porcelain)"]; then
     exit
 fi
 
