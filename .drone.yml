@@ -1,0 +1,17 @@
+---
+kind: pipeline
+type: docker
+name: default
+
+steps:
+- name: build
+  commands:
+    - ls
+    - echo haha
+
+
+trigger:
+  branch:
+  - master
+  event:
+  - push
